@@ -1,7 +1,9 @@
 body{
     margin: 0;
-    width: 100%;
+    padding: 0;
+    width: 100vw;
     height: auto;
+    box-sizing: border-box;
 }
 img{
     max-width: 30vw;
@@ -38,8 +40,15 @@ h1{
  font-size: 3rem;
  top: -10%;
  left: 5vw;
+ font-family: fantasy,"Courier New";
+ letter-spacing: 2px;
+ font-weight: lighter;
 }
 
+.img-container{
+    width: fit-content;
+    display: inline-block;
+}
 
 #find-item{
     padding: 12px;
@@ -92,5 +101,12 @@ ul{
         }
         .search{
             margin-top: 4vh;
+        }
+        .img-container{
+            text-align: center;
+            width: 100%;
+        }
+        li{
+            text-align: center;
         }
 }

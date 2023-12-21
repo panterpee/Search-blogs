@@ -9,9 +9,12 @@ document.addEventListener("DOMContentLoaded", function() {
         const li = document.createElement("li");
         li.textContent = item.value;
         itemList.appendChild(li);
+        const imgContainer = document.createElement("div");
         const img = document.createElement("img");
+        imgContainer.className = "img-container"
         img.src = item.image;
-        itemList.appendChild(img);
+        imgContainer.appendChild(img);
+        itemList.appendChild(imgContainer);
         const detail = document.createElement("p");
         detail.className = "detail";
         detail.innerText = item.detail;
@@ -34,7 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 const li = document.createElement("li");
                 li.innerText = item.value;
                 itemList.appendChild(li);
-                const img = document.createElement("img");
+                const ImgCont = document.createElement("div");
+                const img = ImgCont.appendChild(document.createElement("img"));
                 img.src = item.image;
                 itemList.appendChild(img);
                 const detail = document.createElement("p");
