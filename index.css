@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+img{
+    max-width: 30vw;
+    min-width: 300px;
+    height: auto;
+    box-shadow: 3px 5px 10px #888888;
+}
+#parent{
+    min-width: 300px;
+    width: 100%;
+    height: 80px;
+    padding: 10px 0px 10px 5vw;
+    margin-top: 0;
+    box-shadow: 3px 3px 18px grey;
+    position: relative;
+}
+
+.background{
+ background-image: url("https://img.freepik.com/premium-photo/leaves-vibrant-gradient-holographic-neon-colors_372999-8974.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1702944000&semt=ais");
+ background-size: 100%;
+ opacity: 0.9;
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+}
+
+
+h1{
+ position: absolute;
+ width: 90%;
+ color: rgba(255, 255, 255, 0.895);
+ font-size: 3rem;
+ top: -10%;
+ left: 5vw;
+}
+
+
+#find-item{
+    padding: 12px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    box-shadow: 0.5px 0.5px 2px #888888;
+
+}
+.search{
+    margin-left: 5vw;
+    margin-top: 6vh;
+}
+#find-item:focus{
+    border: 1px solid grey;
+}
+#item-list{
+    padding: 0;
+}
+label{
+    font-size: 1.5rem;
+}
+.detail{
+    display: inline-block;
+    vertical-align:top;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 20px;
+    max-width: 700px;
+    min-width:300px;
+}
+hr{
+    width: 80%;
+    margin: 30px;
+}
+li{
+  list-style-type: none;
+  font-size: 2rem;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+ul{
+    margin-left: 5%;
+}
+
+@media  (max-width:375px) {
+        #parent{
+            height: 140px;
+        }
+        .search{
+            margin-top: 4vh;
+        }
+}
