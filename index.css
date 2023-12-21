@@ -86,7 +86,7 @@ ul{
     margin-left: 5%;
 }
 
-@media  (max-width:375px) {
+@media  (max-width:414px) {
         #parent{
             height: 140px;
         }
